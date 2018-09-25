@@ -1,0 +1,22 @@
+.content-block {
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__image {
+    flex: 1;
+    background-size: cover;
+
+    &:before {
+      content: "";
+      padding-top: 60%;
+      display: block;
+    }
+  }
+
+  &__content {
+    flex: 1;
+    padding: 20px 30px;
+  }
+}

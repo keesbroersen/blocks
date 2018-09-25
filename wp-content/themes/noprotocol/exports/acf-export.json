@@ -1,0 +1,636 @@
+[
+    {
+        "key": "group_58fa26ba9141e",
+        "title": "Contentblocks",
+        "fields": [
+            {
+                "key": "field_58fa26c0194ae",
+                "label": "Contentblocks",
+                "name": "contentblocks",
+                "type": "flexible_content",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "button_label": "Voeg blok toe",
+                "min": "",
+                "max": "",
+                "layouts": [
+                    {
+                        "key": "58ff0c17176ff",
+                        "name": "featured_posts",
+                        "label": "Uitgelichte posts",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_58ff0cc78ca00",
+                                "label": "Titel",
+                                "name": "title",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_58ff0c4717700",
+                                "label": "Posts",
+                                "name": "post_selector",
+                                "type": "repeater",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "collapsed": "",
+                                "min": 1,
+                                "max": 4,
+                                "layout": "table",
+                                "button_label": "",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_58ff0c6217701",
+                                        "label": "Uitgelichte post",
+                                        "name": "featured_post",
+                                        "type": "post_object",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "post_type": [
+                                            "stories||news"
+                                        ],
+                                        "taxonomy": [],
+                                        "allow_null": 0,
+                                        "multiple": 0,
+                                        "return_format": "object",
+                                        "ui": 1
+                                    }
+                                ]
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    {
+                        "key": "5a1be8bc48cdc",
+                        "name": "auto_slider",
+                        "label": "Auto Slider",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5a1be8bf48cdd",
+                                "label": "Slides",
+                                "name": "slides",
+                                "type": "repeater",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "collapsed": "",
+                                "min": 0,
+                                "max": 0,
+                                "layout": "table",
+                                "button_label": "",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_5a1be8ed48cdf",
+                                        "label": "Slide image",
+                                        "name": "slide_image",
+                                        "type": "image",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "25",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "return_format": "array",
+                                        "preview_size": "thumbnail",
+                                        "library": "all",
+                                        "min_width": "",
+                                        "min_height": "",
+                                        "min_size": "",
+                                        "max_width": "",
+                                        "max_height": "",
+                                        "max_size": "",
+                                        "mime_types": ""
+                                    },
+                                    {
+                                        "key": "field_5a1be8f448ce0",
+                                        "label": "Slider content",
+                                        "name": "slider_content",
+                                        "type": "wysiwyg",
+                                        "instructions": "Add your slide copy in here",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "tabs": "all",
+                                        "toolbar": "basic",
+                                        "media_upload": 0,
+                                        "delay": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "field_5a1be91248ce1",
+                                "label": "Animation style",
+                                "name": "animation_style",
+                                "type": "select",
+                                "instructions": "Select the animation style of your choice",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "slide": "Slide",
+                                    "fade": "Fade",
+                                    "overlap": "Overlap"
+                                },
+                                "default_value": [
+                                    "slide"
+                                ],
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "ajax": 0,
+                                "return_format": "value",
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_5a1c00a05c841",
+                                "label": "Slider ID",
+                                "name": "slider_id",
+                                "type": "text",
+                                "instructions": "An ID required to make a reference to the slider. This can be anything",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5a1c2aaf60397",
+                                "label": "Slider time",
+                                "name": "slider_time",
+                                "type": "number",
+                                "instructions": "Set the interval in milliseconds",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "30",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": 5000,
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "min": 0,
+                                "max": "",
+                                "step": ""
+                            },
+                            {
+                                "key": "field_5a1d90f8984c0",
+                                "label": "Easing",
+                                "name": "easing",
+                                "type": "radio",
+                                "instructions": "Select a slide transition easing",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_5a1be91248ce1",
+                                            "operator": "==",
+                                            "value": "slide"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "field": "field_5a1be91248ce1",
+                                            "operator": "==",
+                                            "value": "overlap"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "none": "None",
+                                    "bounce": "Bounce",
+                                    "ease": "Ease"
+                                },
+                                "allow_null": 0,
+                                "other_choice": 0,
+                                "save_other_choice": 0,
+                                "default_value": "none",
+                                "layout": "horizontal",
+                                "return_format": "value"
+                            },
+                            {
+                                "key": "field_5a1ff5d69f6f5",
+                                "label": "Manual navigation",
+                                "name": "manual_navigation",
+                                "type": "radio",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "disabled": "Disabled",
+                                    "enabled": "Enabled"
+                                },
+                                "allow_null": 0,
+                                "other_choice": 0,
+                                "save_other_choice": 0,
+                                "default_value": "disabled",
+                                "layout": "horizontal",
+                                "return_format": "value"
+                            },
+                            {
+                                "key": "field_5a21258571601",
+                                "label": "Screen mode",
+                                "name": "screen_mode",
+                                "type": "radio",
+                                "instructions": "Select a wrapper for the slider",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "wrapped": "Wrapped",
+                                    "full-screen": "Full screen"
+                                },
+                                "allow_null": 0,
+                                "other_choice": 0,
+                                "save_other_choice": 0,
+                                "default_value": "",
+                                "layout": "horizontal",
+                                "return_format": "value"
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_58fa247ea7fb6",
+        "title": "Options",
+        "fields": [
+            {
+                "key": "field_58ff699396f0b",
+                "label": "Algemeen",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_591047faa4679",
+                "label": "Tekst 404 pagina",
+                "name": "text_404",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 5,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_58fa24873ead8",
+                "label": "Main logo",
+                "name": "main_logo",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_58ff68a74fda9",
+                "label": "Footer logo",
+                "name": "footer_logo",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5915a01ce284a",
+                "label": "Sitemap",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5915a027e284b",
+                "label": "Sitemap",
+                "name": "sitemap",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "row",
+                "button_label": "Eerste niveau pagina",
+                "sub_fields": [
+                    {
+                        "key": "field_5915a03fe284c",
+                        "label": "Pagina link",
+                        "name": "pagina_link",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5915a0d90a423",
+                        "label": "Pagina naam",
+                        "name": "pagina_naam",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5915aaea063b4",
+                        "label": "Kleur",
+                        "name": "kleur",
+                        "type": "color_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": ""
+                    },
+                    {
+                        "key": "field_5915a1036f234",
+                        "label": "Tweede niveau",
+                        "name": "tweede_niveau",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "table",
+                        "button_label": "Tweede niveau pagina",
+                        "sub_fields": [
+                            {
+                                "key": "field_5915a11e6f235",
+                                "label": "Pagina link",
+                                "name": "pagina_link",
+                                "type": "url",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_5915a1256f236",
+                                "label": "Pagina naam",
+                                "name": "pagina_naam",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "field_5a1575770500b",
+                "label": "Dev",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5a15758b0500c",
+                "label": "Environment",
+                "name": "environment",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "development": "Development",
+                    "staging": "Staging",
+                    "production": "Production"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "",
+                "layout": "vertical",
+                "return_format": "value"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

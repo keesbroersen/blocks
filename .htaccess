@@ -1,0 +1,12 @@
+
+RewriteEngine On
+RewriteRule ^index\.php$ - [L]
+
+# Rewrite assets in /dist/ folder.
+RewriteCond  %{DOCUMENT_ROOT}/dist/$1 -f
+RewriteRule  ^(.*)$  /dist/$1  [L]
+
+# Rewrite the rest
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]

@@ -1,0 +1,9 @@
+.image-block {
+  background-size: cover;
+
+  &:before {
+    content: "";
+    padding-top: 45%;
+    display: block;
+  }
+}
