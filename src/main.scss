@@ -143,26 +143,21 @@ code {
   width: 100%;
 }
 
-.dev-block {
+.dev-container-block {
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 1;
   position: relative;
   z-index: 2;
-  background: rgba(0, 0, 0, 0.1);
+  background: none;
   padding: 0 10px;
   margin-bottom: 10px;
   width: 100%;
   min-width: 225px;
   height: 50px;
-  // border: 1px solid #fff;
   color: #fff;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.1) 0%,
-    rgba(0, 0, 0, 0.25) 100%
-  );
+  box-shadow: 1px 0px 0 rgba(255, 255, 255, 0.2);
 
   &__content {
     display: flex;
@@ -208,14 +203,14 @@ code {
 }
 
 .dev-row:nth-child(odd) {
-  .dev-block__content {
+  .dev-container-block__content {
     background: #fff;
   }
 }
 
 .dev-row:nth-child(even) {
-  .dev-block__content {
-    background: #eee;
+  .dev-container-block__content {
+    background: #ddd;
   }
 }
 

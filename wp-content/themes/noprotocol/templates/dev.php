@@ -12,6 +12,7 @@ wp_head();
     $devpage = true;
 
     $contentblocks_obj;
+    $page_obj;
 
     $dirname = dirname(dirname( __FILE__));
 
@@ -97,8 +98,20 @@ wp_head();
 
             }
         }
+
+        $this_page = $page['title']['rendered'];
+        
+        if(!isset($page_obj[$this_page]['acf'])){
+            $page_obj[$this_page]['acf'] = null;
+        }
+        if(!is_array($page_obj[$this_page]['acf'])){
+            $page_obj[$this_page]['acf'] = array();
+        }
+
+        array_push($page_obj[$this_page]['acf'], $page['acf']['contentblocks']);
     }
 
+    $props['pages'] = $page_obj;
     $props['prop_data'] = $contentblocks_obj;
 ?>   
 <div data-component="Dev" <?= vueProps($props); ?>></div>

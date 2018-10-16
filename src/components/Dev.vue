@@ -15,6 +15,7 @@
 import DevPageBlocks from "./DevPageBlocks.vue";
 import DevPageStyleguide from "./DevPageStyleguide.vue";
 import DevPageInfo from "./DevPageInfo.vue";
+import DevPages from "./DevPages.vue";
 import DevMenu from "./DevMenu.vue";
 
 export default {
@@ -23,7 +24,8 @@ export default {
     DevPageBlocks,
     DevPageStyleguide,
     DevPageInfo,
-    DevMenu
+    DevMenu,
+    DevPages
   },
   props: {
     prop_data: { type: Object, required: true }
@@ -32,8 +34,8 @@ export default {
     return {
       data: { type: Object, required: false },
       pages: {
-        info: false,
-        styleguide: true,
+        info: true,
+        styleguide: false,
         atoms: false,
         blocks: false,
         pages: false

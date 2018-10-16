@@ -1,6 +1,6 @@
 <template>
   <div class="dev__menu">
-    <h2>Dev menu</h2>
+    <h2>Projectname</h2>
     <a 
       :class="{'active': pages.info}"
       href="#"
@@ -14,7 +14,10 @@
       :class="{'active': pages.blocks}" 
       href="#" 
       @click="route('blocks')">Components</a>
-    <a href="#">Pages</a>
+    <a 
+      :class="{'active': pages.pages}" 
+      href="#" 
+      @click="route('pages')">Pages</a>
   </div>
 </template>
 

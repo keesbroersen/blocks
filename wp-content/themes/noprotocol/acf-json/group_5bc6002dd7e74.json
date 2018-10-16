@@ -1,0 +1,62 @@
+{
+  "key": "group_5bc6002dd7e74",
+  "title": "contentblocks",
+  "fields": [
+    {
+      "key": "field_5bc6003132f8e",
+      "label": "Blokje 1",
+      "name": "blokje_1",
+      "type": "text",
+      "instructions": "Mooi tekstblokje",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_5bc60031327578",
+      "label": "Blokje 2",
+      "name": "blokje_2",
+      "type": "text",
+      "instructions": "Mooi eorigu",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "post"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": 1,
+  "description": "",
+  "modified": 1539702841
+}

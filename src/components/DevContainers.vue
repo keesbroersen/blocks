@@ -175,9 +175,10 @@ export default {
     height: 100%;
     width: 100%;
     min-height: 200px;
+    background: rgba(0, 0, 0, 0.5);
 
     div {
-      background: #f7f7f7;
+      background: rgba(255, 255, 255, 0.1);
       margin: 0 10px;
       padding: 10px 0 0;
       width: 100%;
