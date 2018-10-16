@@ -1,0 +1,135 @@
+body {
+  line-height: 1.2;
+  color: color(font-normal);
+  font-weight: normal;
+  letter-spacing: 0.2px;
+}
+
+body,
+input,
+select {
+  font-family: "Helvetica", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  line-height: 1.5;
+  strong {
+    font-weight: normal;
+  }
+}
+
+h1,
+.h1 {
+  font-size: 42px;
+  line-height: 46px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+h2,
+.h2 {
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  &--accent {
+    font-style: italic;
+    color: $primary;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 28px;
+}
+
+h4,
+.h4 {
+  font-size: 22px;
+}
+
+h5,
+.h5 {
+  font-size: 18px;
+}
+
+p,
+.paragraph {
+  line-height: 1.5;
+  color: color(font-light);
+  font-weight: 200;
+  font-size: 14px;
+
+  a {
+    color: $primary;
+  }
+}
+
+@media (max-width: 768px) {
+  h1,
+  .h1 {
+    font-size: 36px;
+  }
+
+  h2,
+  .h2 {
+    font-size: 28px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 22px;
+  }
+
+  h4,
+  .h4 {
+    font-size: 18px;
+  }
+
+  h5,
+  .h5 {
+    font-size: 16px;
+  }
+
+  p,
+  .paragraph {
+    font-size: 13px;
+  }
+}
+
+.dev-mobile {
+  h1,
+  .h1 {
+    font-size: 36px;
+  }
+
+  h2,
+  .h2 {
+    font-size: 28px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 22px;
+  }
+
+  h4,
+  .h4 {
+    font-size: 18px;
+  }
+
+  h5,
+  .h5 {
+    font-size: 16px;
+  }
+
+  p,
+  .paragraph {
+    font-size: 13px;
+  }
+}

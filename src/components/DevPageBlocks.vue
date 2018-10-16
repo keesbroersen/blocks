@@ -1,12 +1,12 @@
 <template>
   <div class="dev__page">
-    <div class="dev__sidebar">
+    <DevSidebar>
       <a 
         v-for="(block, key) in prop_data" 
         :key="key" 
         :href="'#'+key" 
         v-html="key"/>
-    </div>
+    </DevSidebar>
     <div class="dev__content">
       <div class="dev__container">
         <DevBlock 
@@ -21,10 +21,12 @@
 
 <script>
 import DevBlock from "./DevBlock.vue";
+import DevSidebar from "./DevSidebar.vue";
 export default {
   name: "DevPageBlocks",
   components: {
-    DevBlock
+    DevBlock,
+    DevSidebar
   },
   props: {
     prop_data: { type: Object, required: true }

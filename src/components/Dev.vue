@@ -7,12 +7,14 @@
       v-if="pages.blocks" 
       :prop_data="prop_data"/>
     <DevPageStyleguide v-if="pages.styleguide"/>
+    <DevPageInfo v-if="pages.info"/>
   </div>
 </template>
 
 <script>
 import DevPageBlocks from "./DevPageBlocks.vue";
 import DevPageStyleguide from "./DevPageStyleguide.vue";
+import DevPageInfo from "./DevPageInfo.vue";
 import DevMenu from "./DevMenu.vue";
 
 export default {
@@ -20,6 +22,7 @@ export default {
   components: {
     DevPageBlocks,
     DevPageStyleguide,
+    DevPageInfo,
     DevMenu
   },
   props: {
@@ -50,7 +53,7 @@ export default {
 </script>
 
 <style lang="scss">
-// @import "../mixins.scss";
+// @import "../main.scss";
 // @import "../variables.scss";
 .dev {
   // display: grid;
@@ -69,28 +72,13 @@ export default {
     width: 100%;
   }
 
-  &__sidebar {
-    // grid-area: sidebar;
-    width: 30%;
-    max-width: 250px;
-    display: flex;
-    flex-direction: column;
-
-    padding: 20px;
-    background: #f7f7f7;
-
-    a {
-      text-decoration: none;
-      color: #333;
-      margin: 0 0 20px;
-    }
-  }
-
   &__content {
     // grid-area: content;
     position: relative;
     overflow-y: scroll;
+    scroll-behavior: smooth;
     width: 100%;
+    height: calc(100vh - 60px);
     background: #fff;
 
     .dev__container {
@@ -111,22 +99,5 @@ export default {
       font-weight: bold;
     }
   }
-
-  // button {
-  //   padding: 5px 10px;
-  //   background: #fff;
-  //   border: 1px solid #ccc;
-  //   border-radius: 5px;
-  //   margin-bottom: 5px;
-
-  //   &:not(:last-child) {
-  //     margin-right: 5px;
-  //   }
-
-  //   &.active {
-  //     background: #ccc;
-  //     font-weight: bold;
-  //   }
-  // }
 }
 </style>

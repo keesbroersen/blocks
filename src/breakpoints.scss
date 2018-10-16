@@ -1,0 +1,31 @@
+$grid-width: 1200px;
+
+@mixin mobile-small {
+  @media all and (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media all and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media all and (min-width: 769px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media all and (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin container-max {
+  @media all and (max-width: $grid-width) {
+    @content;
+  }
+}

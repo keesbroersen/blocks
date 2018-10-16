@@ -1,7 +1,10 @@
 <template>
   <div class="dev__menu">
     <h2>Dev menu</h2>
-    <a href="#">Info</a>
+    <a 
+      :class="{'active': pages.info}"
+      href="#"
+      @click="route('info')">Info</a>
     <a 
       :class="{'active': pages.styleguide}"
       href="#"
@@ -46,6 +49,7 @@ export default {
   justify-content: space-between;
   padding: 0 20px;
   height: 60px;
+  background: #fff;
   border-bottom: 1px solid #e6e6e6;
 
   a {
